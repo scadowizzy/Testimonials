@@ -20,7 +20,7 @@ main{
 .first{
    background-image: url(./images/bg-pattern-quotation.svg);
    background-repeat: no-repeat;
-   background-position: top right;
+   background-position: 80% 0%;
    background-color:  hsl(263, 55%, 52%);
    border-radius: 5px;
    grid-area: one;
@@ -74,20 +74,32 @@ p{
 }
 h4{
     padding-bottom: 20px;
-    font-size: large;
+    font-size:medium;
 }
-@media screen and (min-width:375px) and(max-width:780px) {
+@media screen and (min-width: 375px) and (max-width: 800px){
     main{
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         max-width: 100%;
         min-height: 100vh;
-        margin: 0; */
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1.8fr 1fr 2fr;
-        max-width: 100%;
-        min-height: 100vh;
         margin: 0;
+        padding: 50px 30px;
     }
-    
+    .first{
+        order: 1;
+    }.second{
+        order: 2;
+    }
+    .third{
+        order: 5;
+    }
+    .fourth{
+        order: 3;
+    }
+    .last{
+        order: 4;
+    }
+   
+   
+
 }
